@@ -8,7 +8,7 @@ mkdir -p $OUTPUT_DIR
 
 # Subdomain Enumeration
 echo "[+] Running Subfinder..."
-subfinder -d $TARGET -silent -o $OUTPUT_DIR/subfinder.txt
+subfinder -d "$TARGET" -silent -o "$OUTPUT_DIR/subfinder.txt"
 
 echo "[+] Running Assetfinder..."
 assetfinder --subs-only $TARGET >> $OUTPUT_DIR/subfinder.txt
